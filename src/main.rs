@@ -13,7 +13,7 @@ impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
     ) -> Result<(), HandleError> {
         let ten_millis = time::Duration::from_millis(1000);
         let now = time::Instant::now();
-        // thread::sleep(ten_millis);
+        thread::sleep(ten_millis);
         println!("In Belati's (2206081276) Computer [129500004y]. Message
         received: {:?}", message);
         Ok(())
